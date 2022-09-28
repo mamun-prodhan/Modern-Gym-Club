@@ -1,9 +1,17 @@
 import './App.css';
+import Exercise from './components/Exercise/Exercise';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div>
-      <h1>Hello Assignment eight started</h1>
+    <div className='row'>
+      <div className="col-9 exercise-container">
+        <Header></Header>
+        <Exercise></Exercise>
+      </div>
+      <div className="col-3 bg-danger person-container">
+        <h3>Person info</h3>
+      </div>
     </div>
   );
 }
