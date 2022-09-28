@@ -5,11 +5,11 @@ import Header from './components/Header/Header';
 function App() {
   return (
     <div className='row'>
-      <div className="col-9 exercise-container">
+      <div className="col-12 exercise-container">
         <Header></Header>
         <Exercise></Exercise>
       </div>
-      <div className="col-3 bg-danger person-container">
+      <div className="col-12 bg-danger person-container">
         <h3>Person info</h3>
       </div>
     </div>
