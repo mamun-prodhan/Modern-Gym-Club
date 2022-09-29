@@ -11,7 +11,7 @@ const Exercises = (props) => {
 
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
-                    <p className="card-text ">{description}</p>
+                    {/* <p className="card-text ">{description}</p> */}
                     <p className='fw-semibold'>For Age: <span className='fw-bold'>{age}</span></p>
                     <p className='fw-semibold'>Time require: <span className='fw-bold'>{time}s</span></p>
                     <div>
