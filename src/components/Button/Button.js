@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Button = ({time}) => {
+const Button = (props) => {
+    const time = props.time;
+
     return (
         <div>
-            <button className='border-primary rounded p-2 btn btn-outline-primary fw-bold'>{time}<span>s</span></button>
+            <button onClick={()=>props.handleBreakTime(props.time)} className='border-primary rounded p-2 btn btn-outline-primary fw-bold'>{time}<span>s</span></button>
         </div>
     );
 };

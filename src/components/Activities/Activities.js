@@ -13,7 +13,6 @@ const Activities = () => {
     }, [])
 
     const handleAddToList = (activity)=>{
-        console.log(activity);
         const newtimes = [...times, activity];
         setTimes(newtimes);
 
