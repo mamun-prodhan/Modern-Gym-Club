@@ -4,13 +4,13 @@ import Info from '../Info/Info';
 import Time from '../Time/Time';
 import './Person.css'
 
-const Person = () => {
+const Person = (props) => {
     return (
         <div className='bg-secondary rounded bg-opacity-25 p-4'>
             
             <Info></Info>
             <Break></Break>
-            <Time></Time>
+            <Time times={props.times}></Time>
             
         </div>
     );

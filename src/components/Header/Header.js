@@ -6,7 +6,7 @@ const Header = () => {
     return (
 
         <div>
-            <nav className="navbar navbar-expand-lg bg-danger p-3">
+            <nav className="navbar navbar-expand-lg bg-primary bg-opacity-50 p-3">
                 <div className='d-flex align-items-center'>
                     <img className='logo' src={logo} alt="" />
                     <a className="navbar-brand fw-bold fs-2" href="/">Modern Gym Club</a>

@@ -10,6 +10,7 @@ const Break = () => {
                 {
                    times.map(time => <Button
                     time={time}
+                    key={time}
                    ></Button>) 
                 }
             </div>

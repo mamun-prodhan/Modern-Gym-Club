@@ -4,12 +4,21 @@ import Person from '../Person/Person';
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
+    const [times, setTimes] = useState([]);
 
     useEffect(() => {
         fetch('gym.json')
             .then(res => res.json())
             .then(data => setActivities(data));
     }, [])
+
+    const handleAddToList = (activity)=>{
+        console.log(activity);
+        const newtimes = [...times, activity];
+        setTimes(newtimes);
+
+    }
+
 
     return (
         <div className='row'>
@@ -20,12 +29,13 @@ const Activities = () => {
                    activities.map(activity => <Exercises
                    key={activity.id}
                    activity={activity}
+                   handleAddToList={handleAddToList}
                    ></Exercises>) 
                 }
                 </div>
             </div>
             <div className='col-lg-4 col-md-6'>
-                <Person></Person>
+                <Person times={times}></Person>
             </div>
 
 
