@@ -15,7 +15,7 @@ const Exercises = (props) => {
                     <p className='fw-semibold'>For Age: <span className='fw-bold'>{age}</span></p>
                     <p className='fw-semibold'>Time require: <span className='fw-bold'>{time}s</span></p>
                     <div>
-                        <button type="button" class="w-100 btn btn-outline-primary">Add to List</button>
+                        <button type="button" class="w-100 btn btn-outline-primary fw-bold">Add to List</button>
                     </div>
                 </div>
             </div>

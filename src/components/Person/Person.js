@@ -4,7 +4,7 @@ import './Person.css'
 
 const Person = () => {
     return (
-        <div className='bg-secondary bg-opacity-25 p-4'>
+        <div className='bg-secondary rounded bg-opacity-25 p-4'>
             <div className='d-flex align-items-center p-3'>
                 <img className='rounded-circle my-img' src={image} alt="" />
                 <div className='ms-2'>
@@ -28,29 +28,41 @@ const Person = () => {
                 </div>
             </div>
 
-            <h4 className='mt-3'>Add A Break</h4>
+            <h4 className='mt-5'>Add A Break</h4>
 
             <div className='d-flex justify-content-between mt-3 p-3 bg-light rounded'>
                 <div>
-                    <button className='border-primary rounded p-2 btn btn-outline-primary'>15<span>s</span></button>
+                    <button className='border-primary rounded p-2 btn btn-outline-primary fw-bold'>15<span>s</span></button>
                 </div>
                 <div>
-                    <button className='border-primary rounded p-2 btn btn-outline-primary'>20<span>s</span></button>
+                    <button className='border-primary rounded p-2 btn btn-outline-primary fw-bold'>20<span>s</span></button>
                 </div>
                 <div>
-                    <button className='border-primary rounded p-2 btn btn-outline-primary'>25<span>s</span></button>
+                    <button className='border-primary rounded p-2 btn btn-outline-primary fw-bold'>25<span>s</span></button>
                 </div>
                 <div>
-                    <button className='border-primary rounded p-2 btn btn-outline-primary'>30<span>s</span></button>
+                    <button className='border-primary rounded p-2 btn btn-outline-primary fw-bold'>30<span>s</span></button>
                 </div>
                 <div>
-                    <button className='border-primary rounded p-2 btn btn-outline-primary'>40<span>s</span></button>
+                    <button className='border-primary rounded p-2 btn btn-outline-primary fw-bold'>40<span>s</span></button>
                 </div>
             </div>
 
-            <h4 className='mt-3 mb-3'>Exercise Details</h4>
+            <h4 className='mt-5 mb-3'>Exercise Details</h4>
 
-            
+            <div className='d-flex justify-content-between align-items-center p-3 m-0 bg-light rounded'>
+                <p className='fw-bold m-0'>Exercise Time</p>
+                <p className='m-0'>0 seconds</p>
+            </div>
+
+            <div className='d-flex justify-content-between align-items-center p-3 mt-3 bg-light rounded'>
+                <p className='fw-bold m-0'>Break Time</p>
+                <p className='m-0'>0 seconds</p>
+            </div>
+
+            <div>
+                <button type="button" class="w-100 btn btn-outline-primary py-3 mt-5 mb-3 fw-bold">Activity Completed</button>
+            </div>
         </div>
     );
 };
