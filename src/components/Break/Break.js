@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../Button/Button';
 
 const Break = () => {
-    const times = [15, 20, 25, 30, 35]
+    const times = [15, 20, 25, 30]
     return (
         <div>
             <h4 className='mt-5'>Add A Break</h4>

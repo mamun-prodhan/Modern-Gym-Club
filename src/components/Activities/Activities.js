@@ -14,7 +14,7 @@ const Activities = () => {
     return (
         <div className='row'>
 
-            <div className='col-lg-9 col-md-6'>
+            <div className='col-lg-8 col-md-6'>
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 {
                    activities.map(activity => <Exercises
@@ -24,7 +24,7 @@ const Activities = () => {
                 }
                 </div>
             </div>
-            <div className='col-lg-3 col-md-6'>
+            <div className='col-lg-4 col-md-6'>
                 <Person></Person>
             </div>
 
