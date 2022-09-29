@@ -2,11 +2,14 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className='container'>
-            <div className='mt-5'>
-                <h3 className='text-success'>Body Builders Club</h3>
-                <h5 className='mt-3 mb-5'>Select Todays Exercise</h5>
-            </div>
+
+        <div>
+            <nav className="navbar navbar-expand-lg bg-danger">
+                <div className="container">
+                    <a className="navbar-brand fw-bold fs-2" href="/">Modern Gym Club</a>
+                </div>
+            </nav>
+            <h4 className='container mt-3'>Todays WorkOut Plans</h4>
         </div>
     );
 };
